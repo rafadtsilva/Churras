@@ -22,10 +22,10 @@ function calcular() {
 
     let qtdTotalCarne = carne * adultos + (carne/2 * crianças);
     let qtdTotalCerveja = cerveja * adultos;
-    let qtdTotalBebida = carne * adultos + (carne/2 * crianças);
+    let qtdTotalBebida = bebida * adultos + (bebida/2 * crianças);
     // console.log(qtdTotalCarne);
 
-    resultado.innerHTML = '<p>${qtdTotalCarne}g de Carnes</p>'
-    resultado.innerHTML += '<p>${qtdTotalCerveja}ml de Cerveja</p>'
-    resultado.innerHTML += '<p>$qdtTotalBebida}ml de Bebidas</p>'
+    resultado.innerHTML = `<p>🍖 ${qtdTotalCarne / 1000}Kg de Carnes</p>`
+    resultado.innerHTML += `<p>🍻 ${Math.ceil(qtdTotalCerveja / 355)}Latas de Cerveja</p>`
+    resultado.innerHTML += `<p>🥤 ${Math.ceil(qtdTotalBebida/1000)}L de Bebidas</p>`
 }
