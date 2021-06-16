@@ -63,4 +63,8 @@ p {
     p {
         font-size: 7vw;
     }
+    body {
+        background-size: 1500px;
+    }
+    
   }
